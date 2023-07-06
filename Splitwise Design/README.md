@@ -18,7 +18,7 @@ Now you can just go to the app and add that you paid 1000,
 
 select all the 4 people and then select split equally.
 
-Input: u1 1000 4 u1 u2 u3 u4 EQUAL
+Input: `u1 1000 4 u1 u2 u3 u4 EQUAL`
 
 For this transaction, everyone owes 250 to User1.
 
@@ -36,7 +36,7 @@ You buy a few stuffs for User2 and User3 as they asked you to.
 
 The total amount for each person is different.
 
-Input: u1 1250 2 u2 u3 EXACT 370 880
+Input: `u1 1250 2 u2 u3 EXACT 370 880`
 
 For this transaction, User2 owes 370 to User1 and User3 owes 880 to User1.
 
@@ -54,7 +54,7 @@ Now, you go out with your flatmates and take your brother/sister along with you.
 
 User4 pays and everyone splits equally. You owe for 2 people.
 
-Input: u4 1200 4 u1 u2 u3 u4 PERCENT 40 20 20 20
+Input: `u4 1200 4 u1 u2 u3 u4 PERCENT 40 20 20 20`
 
 For this transaction, User1 owes 480 to User4, User2 owes 240 to User4 and User3 owes 240 to User4.
 
@@ -72,9 +72,9 @@ User3 owes User4: 240 (0+240)
 
 ### Requirements
 
-* User: Each user should have a userId, name, email, mobile number.
+* User: Each user should have a `userId`, `name`, `email`, `mobile number`.
 
-* Expense: Could either be EQUAL, EXACT or PERCENT
+* Expense: Could either be `EQUAL`, `EXACT` or `PERCENT`
 
 * Users can add any amount, select any type of expense and split with any of the available users.
 
@@ -115,8 +115,8 @@ There will be 3 types of input:
 
 * A way to add an expense name while adding the expense. Can also add notes, images, etc.
 
-* Option to split by share. Ex: ‘User4 pays and everyone splits equally. You pay for 2 people.’ could be added as: u4 1200 4 u1 u2 u3 u4 SHARE 2 1 1 1
+* Option to split by share. Ex: User4 pays and everyone splits equally. You pay for 2 people. could be added as: `u4 1200 4 u1 u2 u3 u4 SHARE 2 1 1 1`
 
 * A way to show the passbook for a user. The entries should show all the transactions a user was part of. You can print in any format you like.
 
-* There can be an option to simplify expenses. When simplify expenses is turned on (is true), the balances should get simplified. Ex: ‘User1 owes 250 to User2 and User2 owes 200 to User3’ should simplify to ‘User1 owes 50 to User2 and 200 to User3’.
+* There can be an option to simplify expenses. When simplify expenses is turned on (is true), the balances should get simplified. Ex: `User1 owes 250 to User2 and User2 owes 200 to User3` should simplify to `User1 owes 50 to User2 and 200 to User3`.
