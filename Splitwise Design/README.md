@@ -103,20 +103,20 @@ There will be 3 types of input:
 
 ### Output
 
-    When asked to show balance for a single user. Show all the balances that user is part of:
+⋅⋅* When asked to show balance for a single user. Show all the balances that user is part of:
 
-    Format: `<user-id-of-x> owes <user-id-of-y>: <amount>`
+⋅⋅* Format: `<user-id-of-x> owes <user-id-of-y>: <amount>`
 
-    If there are no balances for the input, print `No balances`
+⋅⋅* If there are no balances for the input, print `No balances`
 
-    In cases where the user for which balance was asked for, owes money, they’ll be x. They’ll be y otherwise.
+⋅⋅* In cases where the user for which balance was asked for, owes money, they’ll be x. They’ll be y otherwise.
 
 ### Optional Requirements
 
-    A way to add an expense name while adding the expense. Can also add notes, images, etc.
+⋅⋅* A way to add an expense name while adding the expense. Can also add notes, images, etc.
 
-    Option to split by share. Ex: ‘User4 pays and everyone splits equally. You pay for 2 people.’ could be added as: u4 1200 4 u1 u2 u3 u4 SHARE 2 1 1 1
+⋅⋅* Option to split by share. Ex: ‘User4 pays and everyone splits equally. You pay for 2 people.’ could be added as: u4 1200 4 u1 u2 u3 u4 SHARE 2 1 1 1
 
-    - A way to show the passbook for a user. The entries should show all the transactions a user was part of. You can print in any format you like.
+⋅⋅* A way to show the passbook for a user. The entries should show all the transactions a user was part of. You can print in any format you like.
 
-    - There can be an option to simplify expenses. When simplify expenses is turned on (is true), the balances should get simplified. Ex: ‘User1 owes 250 to User2 and User2 owes 200 to User3’ should simplify to ‘User1 owes 50 to User2 and 200 to User3’.
+⋅⋅* There can be an option to simplify expenses. When simplify expenses is turned on (is true), the balances should get simplified. Ex: ‘User1 owes 250 to User2 and User2 owes 200 to User3’ should simplify to ‘User1 owes 50 to User2 and 200 to User3’.
